@@ -4,6 +4,14 @@
 ## Leírás
 AR Labirintus játék Android platformra Unity segítségével. A program céla a régi kisméretű kézi labirintus játékok rekreálása AR környezetben. A mobiltelefon kamerájával rámutatunk egy Target képre amelyre rávetítjük a labirintust, majd a kép, névjegykártya, vagy klubkártya mozgatásával, és döntésével a valós játékot imitálva kell eljuttatni a golyókat a kijelölt helyükre.
 
+Valós referenciák:
+
+<p float="left">
+ <img src="Assets/Target/Reference/focis.jpg" width="250">
+ <img src="Assets/Target/Reference/halas.jpg" width="250">
+ <img src="Assets/Target/Reference/kör%20labirintus%203%20golyó.jpg" width="250">
+</p>
+
 ## Telepítés
  A játék használatához szükséges egy [ARCore](https://developers.google.com/ar/discover/supported-devices) kompatibilis eszköz, illetve engedélyezni kell az ismeretlen forrásból származó alkalmazások telepítését.
  Az .apk elérhető itt: [Letöltés](https://github.com/Csaki95/AR-Labirinth-2019-Android/raw/master/Builds/AR%20Labirinth.apk)
