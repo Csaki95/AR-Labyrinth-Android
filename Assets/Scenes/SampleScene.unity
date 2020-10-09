@@ -854,8 +854,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acd4befd0507a7a4e8cf016bcbe319d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isCollided:
-  - {fileID: 11400000, guid: 1641d653fff8e1242afd32cd60a265fd, type: 2}
+  isCollided: {fileID: 0}
   VictoryScreen: {fileID: 1114420353}
 --- !u!4 &720251643
 Transform:
