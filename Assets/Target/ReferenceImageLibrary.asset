@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
+  m_Name: ReferenceImageLibrary
+  m_EditorClassIdentifier: 
+  m_GuidLow: 4736414290598388435
+  m_GuidHigh: 17024542462374252935
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 4696373614333270428
+      m_GuidHigh: 11692637997393226379
+    m_SerializedTextureGuid:
+      m_GuidLow: 14597555201779487820
+      m_GuidHigh: 535687245681646169
+    m_Size: {x: 1, y: 1.0011123}
+    m_SpecifySize: 1
+    m_Name: Marker-01
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4776711360545638393
+      m_GuidHigh: 2959552686067838356
+    m_SerializedTextureGuid:
+      m_GuidLow: 13205709579004528880
+      m_GuidHigh: 2308877721938938314
+    m_Size: {x: 1, y: 0.6264881}
+    m_SpecifySize: 1
+    m_Name: hervis
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5471066744594116003
+      m_GuidHigh: 3231133330311574916
+    m_SerializedTextureGuid:
+      m_GuidLow: 10179527299510513031
+      m_GuidHigh: 13766947762271452938
+    m_Size: {x: 1, y: 0.65106386}
+    m_SpecifySize: 1
+    m_Name: metro
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5618079945239118267
+      m_GuidHigh: 815134642215042724
+    m_SerializedTextureGuid:
+      m_GuidLow: 13791347485450241184
+      m_GuidHigh: 960448648944150152
+    m_Size: {x: 1, y: 0.6537678}
+    m_SpecifySize: 1
+    m_Name: tesco
+    m_Texture: {fileID: 0}
