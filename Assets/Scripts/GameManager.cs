@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [SerializeField]
-    private PlayerCollision isCollided;
+    private List<PlayerCollision> playerCollisions;
 
     [SerializeField]
     public GameObject VictoryScreen;
@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (isCollided) victory();
+        if (collisionCheck()) victory();
     }
 
     public void pause()
@@ -29,6 +29,15 @@ public class GameManager : MonoBehaviour
     public void unPause()
     {
         Time.timeScale = 1.0f;
+    }
+
+    private bool collisionCheck()
+    {
+        foreach (PlayerCollision i in playerCollisions)
+        {
+            if (i.isCollided == false) return false;
+        }
+        return true;
     }
 
     private void victory()
