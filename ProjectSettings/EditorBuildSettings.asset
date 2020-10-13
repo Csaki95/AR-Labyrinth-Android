@@ -11,6 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/OldSampleScene.unity
+    guid: 9f237d79ab1f2cf4b8a4a78f28770c02
+  - enabled: 1
+    path: Assets/Scenes/OldSampleSceneWorking.unity
+    guid: 19c7e92db4b4c7b46bd619535dbc4192
   m_configObjects:
     com.unity.xr.arcore.PlayerSettings: {fileID: 11400000, guid: 27dcd1865957a2241aaab369480c6022,
       type: 2}

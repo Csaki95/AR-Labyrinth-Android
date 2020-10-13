@@ -1,24 +1,29 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
     [SerializeField]
-    private List<PlayerCollision> playerCollisions;
+    public List<PlayerCollision> playerCollisions;
 
+    [SerializeField]
+    private GameObject TrackingLostScreen;
     [SerializeField]
     public GameObject VictoryScreen;
 
     // Start is called before the first frame update
-    void Awake()
+    private void Awake()
     {
         Screen.sleepTimeout = (int)SleepTimeout.NeverSleep;
+
     }
 
     private void Update()
     {
         if (collisionCheck()) victory();
+
     }
 
     public void pause()

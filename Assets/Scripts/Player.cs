@@ -6,9 +6,9 @@ public class Player : MonoBehaviour
 {
 
     [SerializeField]
-    private PlayerCollision playerCollision;
+    public PlayerCollision playerCollision;
 
-    private Rigidbody rigidbody;
+    private new Rigidbody rigidbody;
 
     private void Start()
     {
