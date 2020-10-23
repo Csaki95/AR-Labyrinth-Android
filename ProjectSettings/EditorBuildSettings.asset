@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/OldSampleSceneWorking.unity
     guid: 19c7e92db4b4c7b46bd619535dbc4192
   m_configObjects:
-    com.unity.xr.arcore.PlayerSettings: {fileID: 11400000, guid: 27dcd1865957a2241aaab369480c6022,
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 27dcd1865957a2241aaab369480c6022,
       type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 7a253184ccebc3343b04674010540436,
       type: 2}
