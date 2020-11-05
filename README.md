@@ -17,7 +17,7 @@ Valós referenciák:
  Az .apk elérhető itt: [Letöltés](https://github.com/Csaki95/AR-Labirinth-2019-Android/raw/master/Builds/AR%20Labirinth.apk)
  
  ## Fejlesztés
- A játék Unity 2019.4.10f1 verzióban készül ARFoundation 2.18-ra építve.
+ A játék Unity 2020.1.10f verzióban készül ARCore 1.20.0-ra építve.
  
  Jelenlegi teszt eszközök:
  * Huawei P Smart Z
@@ -25,12 +25,7 @@ Valós referenciák:
  
  ## Targetek
  
- Minél szélesebb körben akarom megkezdeni a tesztelést, így a google saját referencia target-je mellett népszerű árúházak személyes adatot nem tartalmazó kártyáit is felvettem lehetséges célpontok közé.
+ A tesztelés folytatásához ezek után nem alkalmasak gyenge követhetőségű target-ek, így pillanatnyilag csak a hivatalos referencia kép működik.
  
  <img src="Assets/Target/augmented-images-earth.jpg" width="250">
  
- <img src="Assets/Target/hervis.jpg" width="250">
- 
- <img src="Assets/Target/metro.jpg" width="250">
- 
- <img src="Assets/Target/tesco.png" width="250">
