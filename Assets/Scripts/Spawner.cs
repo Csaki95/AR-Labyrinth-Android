@@ -4,21 +4,33 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    public GameObject Player;
 
-    private Transform position;
+    public Player Player;
 
-    void Start()
+    private float spawnDelay = 0.5f;
+
+    private void Start()
+    {
+        Instantiate(Player, this.transform);
+        Player.gameObject.SetActive(false);
+    }
+
+    public void spawnPlayers()
     {
         StartCoroutine(ExampleCoroutine());
 
-        position = this.transform;
+    }
+
+    public bool isPlayerCollided()
+    {
+        return Player.isCollided();
     }
 
     IEnumerator ExampleCoroutine()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(spawnDelay);
 
-        Instantiate(Player, position);
+        Player.transform.position = this.transform.position;
+        Player.gameObject.SetActive(true);
     }
 }

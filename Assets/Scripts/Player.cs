@@ -4,24 +4,26 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-
-    [SerializeField]
-    public PlayerCollision playerCollision;
-
+    private bool playerCollision;
     private new Rigidbody rigidbody;
 
     private void Start()
     {
-        playerCollision.isCollided = false;
+        playerCollision = false;
         rigidbody = GetComponent<Rigidbody>();
+    }
+
+    public bool isCollided()
+    {
+        return playerCollision;
     }
 
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.collider.tag == "Exit")
         {
-            rigidbody.constraints = RigidbodyConstraints.FreezeAll;
-            playerCollision.isCollided = true;
+            //rigidbody.constraints = RigidbodyConstraints.FreezeAll;
+            playerCollision = true;
         }
     }
 }

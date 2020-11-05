@@ -2,51 +2,92 @@
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField]
-    public List<PlayerCollision> playerCollisions;
+    public Text testOutput;
 
-    [SerializeField]
-    private GameObject TrackingLostScreen;
-    [SerializeField]
+    public GameObject TargetLostScreen;
+
+    public GameObject mapPrefab;
+
+    public List<Spawner> spawners = new List<Spawner>();
+
+    public AugmentedImageController augmentedImageController;
+
     public GameObject VictoryScreen;
 
-    // Start is called before the first frame update
+    private Vector3 TargetPosition;
+    private Quaternion TargetRotation;
+
     private void Awake()
     {
-        Screen.sleepTimeout = (int)SleepTimeout.NeverSleep;
+        Screen.sleepTimeout = SleepTimeout.NeverSleep;
+        Application.targetFrameRate = 60;
+    }
 
+    private void Start()
+    {
+        UnPause();
     }
 
     private void Update()
     {
-        if (collisionCheck()) victory();
+        if (CollisionCheck()) Victory();
+        MapTracking();
 
+        testOutput.text = TargetPosition.ToString();
     }
 
-    public void pause()
+    public void SpawnPlayer()
     {
+        foreach(Spawner spawnpoint in spawners)
+        {
+            spawnpoint.spawnPlayers();
+        }
+    }
+
+    public void Pause()
+    {
+        TargetLostScreen.SetActive(false);
         Time.timeScale = 0.0f;
     }
 
-    public void unPause()
+    public void UnPause()
     {
         Time.timeScale = 1.0f;
     }
 
-    private bool collisionCheck()
+    private void MapTracking()
     {
-        foreach (PlayerCollision i in playerCollisions)
+        if(augmentedImageController.imageTrackingState)
         {
-            if (i.isCollided == false) return false;
+            TargetPosition = augmentedImageController.targetPosition;
+            TargetRotation = augmentedImageController.targetRotation;
+            mapPrefab.transform.localPosition = augmentedImageController.targetPosition;
+            mapPrefab.transform.rotation = augmentedImageController.targetRotation;
+            mapPrefab.SetActive(true);
+            TargetLostScreen.SetActive(false);
+        } else
+        {
+            mapPrefab.SetActive(false);
+            TargetLostScreen.SetActive(true);
+        }
+    }
+
+    private bool CollisionCheck()
+    {
+        foreach (Spawner spawner in spawners)
+        {
+            if (spawner.isPlayerCollided() == false) return false;
         }
         return true;
     }
 
-    private void victory()
+    private void Victory()
     {
+        TargetLostScreen.gameObject.SetActive(false);
         VictoryScreen.gameObject.SetActive(true);
         Time.timeScale = 0.0f;
     }
