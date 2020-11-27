@@ -22,7 +22,7 @@ public class Player : MonoBehaviour
     {
         if (collision.collider.tag == "Exit")
         {
-            //rigidbody.constraints = RigidbodyConstraints.FreezeAll;
+            rigidbody.constraints = RigidbodyConstraints.FreezeAll;
             playerCollision = true;
         }
     }
