@@ -2,7 +2,7 @@
  2020/2 szakdolgozat - Csáki Gergő
 
 ## Leírás
-AR Labirintus játék Android platformra Unity segítségével. A program céla a régi kisméretű kézi labirintus játékok rekreálása AR környezetben. A mobiltelefon kamerájával rámutatunk egy Target képre amelyre rávetítjük a labirintust, majd a kép, névjegykártya, vagy klubkártya mozgatásával, és döntésével a valós játékot imitálva kell eljuttatni a golyókat a kijelölt helyükre.
+AR Labirintus játék Android platformra Unity segítségével. A program céla a régi kisméretű kézi labirintus játékok rekreálása AR környezetben. A mobiltelefon kamerájával rámutatunk egy Target képre amelyre rávetítjük a labirintust, majd a kép, névjegykártya mozgatásával, és döntésével a valós játékot imitálva kell eljuttatni a golyókat a kijelölt helyükre megadott időkorláton belül.
 
 Valós referenciák:
 
@@ -20,12 +20,16 @@ Valós referenciák:
  A játék Unity 2020.1.10f verzióban készül ARCore 1.20.0-ra építve.
  
  Jelenlegi teszt eszközök:
- * Huawei P Smart Z
+ * Samsung Galaxy A71
  * Xiaomi Redmi Note 8
  
  ## Targetek
  
- A tesztelés folytatásához ezek után nem alkalmasak gyenge követhetőségű target-ek, így pillanatnyilag csak a hivatalos referencia kép működik.
+ Az elsődleges target kép a következő tengerpart fotó. A névjegykártya target része is erre lesz építve.
+ 
+ <img src="Assets/Target/nature-4785780_1920.jpg" width="250">
+ 
+ Továbbra is használható viszont a referencia kép, amely valamivel jobban működik gyenge fényforrásoknál is.
  
  <img src="Assets/Target/augmented-images-earth.jpg" width="250">
  
