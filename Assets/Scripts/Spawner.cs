@@ -1,36 +1,38 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Spawner : MonoBehaviour
 {
+    public GameObject Player;
+    private GameObject thisPlayer;
+    private Player playerReference;
 
-    public Player Player;
-
+    [SerializeField]
     private float spawnDelay = 0.5f;
 
     private void Start()
     {
-        Instantiate(Player, this.transform);
-        Player.gameObject.SetActive(false);
+        thisPlayer = Instantiate(Player, this.transform);
+        thisPlayer.gameObject.SetActive(false);
+        playerReference = thisPlayer.GetComponent<Player>();
     }
 
     public void spawnPlayers()
     {
-        StartCoroutine(ExampleCoroutine());
-
+        StartCoroutine(SpawnCoroutine());
     }
 
     public bool isPlayerCollided()
     {
-        return Player.isCollided();
+        return playerReference.playerCollided();
     }
 
-    IEnumerator ExampleCoroutine()
+    IEnumerator SpawnCoroutine()
     {
         yield return new WaitForSeconds(spawnDelay);
 
-        Player.transform.position = this.transform.position;
-        Player.gameObject.SetActive(true);
+        thisPlayer.transform.position = this.transform.position;
+        thisPlayer.gameObject.SetActive(true);
     }
 }

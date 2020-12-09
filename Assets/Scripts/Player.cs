@@ -1,29 +1,26 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    private bool playerCollision;
-    private new Rigidbody rigidbody;
+    private bool atGoal;
 
     private void Start()
     {
-        playerCollision = false;
-        rigidbody = GetComponent<Rigidbody>();
+        atGoal = false;
     }
 
-    public bool isCollided()
+    public bool playerCollided()
     {
-        return playerCollision;
+        return atGoal;
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.collider.tag == "Exit")
-        {
-            rigidbody.constraints = RigidbodyConstraints.FreezeAll;
-            playerCollision = true;
-        }
+        atGoal = true;
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        atGoal = false;
     }
 }

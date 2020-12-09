@@ -37,6 +37,13 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+    "com.unity.mobile.android-logcat": {
+      "version": "1.2.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
     "com.unity.multiplayer-hlapi": {
       "version": "https://github.com/skaughtx0r/MultiplayerHLAPI.git",
       "depth": 0,

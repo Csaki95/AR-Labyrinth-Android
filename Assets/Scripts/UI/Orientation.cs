@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -6,35 +7,24 @@ using UnityEngine.UI;
 
 public class Orientation : MonoBehaviour
 {
-    [FormerlySerializedAs("Portrait mode")] 
-    public GameObject portraitCanvas;
-    [FormerlySerializedAs("Landscape mode")]
-    public GameObject landscapeCanvas;
-
-    [FormerlySerializedAs("Portrait mode")]
-    public GameObject portraitList;
-    [FormerlySerializedAs("Landscape mode")]
-    public GameObject landscapeList;
-
-
-
+    public List<CanvasPairs> orientations = new List<CanvasPairs>();
 
     void Update()
     {
         if ( Screen.width > Screen.height )
         {
-            portraitCanvas.gameObject.SetActive(false);
-            landscapeCanvas.gameObject.SetActive(true);
-            portraitList.gameObject.SetActive(false);
-            landscapeList.gameObject.SetActive(true);
-
+            foreach(CanvasPairs canvas in orientations)
+            {
+                canvas.Landscape.SetActive(true);
+                canvas.Portrait.SetActive(false);
+            }
         } else
         {
-            portraitCanvas.gameObject.SetActive(true);
-            landscapeCanvas.gameObject.SetActive(false);
-            portraitList.gameObject.SetActive(true);
-            landscapeList.gameObject.SetActive(false);
-
+            foreach (CanvasPairs canvas in orientations)
+            {
+                canvas.Portrait.SetActive(true);
+                canvas.Landscape.SetActive(false);
+            }
         }
     }
 }
