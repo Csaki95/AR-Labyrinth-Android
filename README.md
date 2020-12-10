@@ -25,7 +25,7 @@ Valós referenciák:
  
  ## Targetek
  
- Az elsődleges target kép a következő tengerpart fotó. A névjegykártya target része is erre lesz építve.
+ Az elsődleges target kép a következő tengerpart fotó. A névjegykártya target része is erre lesz építve letöltéshez kattintson a képre.
  
  <img src="Assets/Target/nature-4785780_1920.jpg" width="250">
  
