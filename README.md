@@ -12,6 +12,13 @@ Valós referenciák:
  <img src="Assets/Target/Reference/kör%20labirintus%203%20golyó.jpg" width="250">
 </p>
 
+## Alkalmazás elemei
+* Labirintus játék több golyóval, és megadott teljesítési határidővel
+* Pálya választó feltüntetett legjobb időkkel
+* Beállítások, és Leírás menüpont
+
+Egyenlőre csak egy pálya van, de továbbiak jönnek
+
 ## Telepítés
  A játék használatához szükséges egy [ARCore](https://developers.google.com/ar/discover/supported-devices) kompatibilis eszköz, illetve engedélyezni kell az ismeretlen forrásból származó alkalmazások telepítését.
  Az .apk elérhető itt: [Letöltés](https://github.com/Csaki95/AR-Labirinth-2019-Android/raw/master/Builds/AR%20Labirinth.apk)
@@ -25,7 +32,7 @@ Valós referenciák:
  
  ## Targetek
  
- Az elsődleges target kép a következő tengerpart fotó. A névjegykártya target része is erre lesz építve.
+ Az elsődleges target kép a következő tengerpart fotó. A névjegykártya target része is erre lesz építve letöltéshez kattintson a képre.
  
  <img src="Assets/Target/nature-4785780_1920.jpg" width="250">
  
