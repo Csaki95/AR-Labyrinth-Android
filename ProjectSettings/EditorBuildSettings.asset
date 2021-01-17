@@ -11,6 +11,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Classic.unity
     guid: c9a413395099b724ab3058cce3ea1d24
+  - enabled: 1
+    path: Assets/Scenes/Star.unity
+    guid: 78a4ec52ae1a40242ae2d26086916173
+  - enabled: 1
+    path: Assets/Scenes/Square.unity
+    guid: 37c14da21bab79c44aca3ba5a36b876a
+  - enabled: 1
+    path: Assets/Scenes/Triangle.unity
+    guid: 3f28e45bc6206df40937a32ca4e9940e
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 27dcd1865957a2241aaab369480c6022,
       type: 2}
