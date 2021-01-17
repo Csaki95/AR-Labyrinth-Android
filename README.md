@@ -1,5 +1,5 @@
 # AR-Labirinth-Android
- 2020/2 szakdolgozat - Csáki Gergő
+ 2020/2 - 2021/1 szakdolgozat - Csáki Gergő
 
 ## Leírás
 AR Labirintus játék Android platformra Unity segítségével. A program céla a régi kisméretű kézi labirintus játékok rekreálása AR környezetben. A mobiltelefon kamerájával rámutatunk egy Target képre amelyre rávetítjük a labirintust, majd a kép, névjegykártya mozgatásával, és döntésével a valós játékot imitálva kell eljuttatni a golyókat a kijelölt helyükre megadott időkorláton belül.
@@ -7,9 +7,7 @@ AR Labirintus játék Android platformra Unity segítségével. A program céla 
 Valós referenciák:
 
 <p float="left">
- <img src="Assets/Target/Reference/focis.jpg" width="250">
- <img src="Assets/Target/Reference/halas.jpg" width="250">
- <img src="Assets/Target/Reference/kör%20labirintus%203%20golyó.jpg" width="250">
+ <img src="Assets/Target/Reference/814dTEjJT2L._SX425_.jpg" width="250">
 </p>
 
 ## Alkalmazás elemei
