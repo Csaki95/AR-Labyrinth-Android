@@ -52,7 +52,7 @@ public class GameManager : MonoBehaviour
         sceneChange = new SceneChange();
         topScore = PlayerPrefs.GetInt(highScoreName, maxTime);
         StartCoroutine(CountDownTimer());
-        UnPause();
+        UnPause(false);
     }
 
     private void Update()
@@ -83,9 +83,9 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0.0f;
     }
 
-    public void UnPause()
+    public void UnPause(bool forSceneChange)
     {
-        isPaused = false;
+        if(!forSceneChange) isPaused = false;
         Time.timeScale = 1.0f;
     }
 
