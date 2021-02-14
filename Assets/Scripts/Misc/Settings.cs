@@ -20,6 +20,17 @@ public class Settings : MonoBehaviour
         Screen.orientation = ScreenOrientation.Portrait;
     }
 
+    // Mute Audio
+    public void MuteAudio()
+    {
+        AudioListener.volume = 0.0F;
+    }
+
+    public void UnMuteAudio()
+    {
+        AudioListener.volume = 1.0F;
+    }
+
     // Resets PlayerPrefs that contain map names, and highscores
     public void ResetScores()
     {

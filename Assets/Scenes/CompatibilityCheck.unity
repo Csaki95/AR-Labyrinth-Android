@@ -743,6 +743,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transition: {fileID: 1222725126}
   transitionTime: 0.5
+  isMap: 0
 --- !u!114 &827747785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1061,6 +1062,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1481247093}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1767,6 +1780,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1481247093}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   hoverEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -1943,6 +1968,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e972c2ecb5cc02459392ca24822c513, type: 3}
+--- !u!82 &1481247093 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7620954311003261652, guid: 8e972c2ecb5cc02459392ca24822c513,
+    type: 3}
+  m_PrefabInstance: {fileID: 1481247092}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1657414771
 GameObject:
   m_ObjectHideFlags: 0
