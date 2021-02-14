@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Notification : MonoBehaviour
 {
+    // Checking if opening notification has been disabled once before
     void Start()
     {
         if (PlayerPrefs.GetInt("doNotify", 1) == 0)
@@ -12,7 +13,7 @@ public class Notification : MonoBehaviour
         }
     }
 
-    public void doNotNotify()
+    public void DoNotNotify()
     {
         PlayerPrefs.SetInt("doNotify", 0);
     }

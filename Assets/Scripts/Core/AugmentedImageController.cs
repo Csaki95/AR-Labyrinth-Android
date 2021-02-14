@@ -9,21 +9,24 @@ using GoogleARCore.Examples.AugmentedImage;
 public class AugmentedImageController : MonoBehaviour
 {
     // Public tracking state for communication with GameManager
+    [Header("Is tracking active:")]
+    [System.NonSerialized]
     public bool imageTrackingState;
 
     // Reference for Target Gameobject Position
+    [Header("Position, and Rotation of target image")]
+    [System.NonSerialized]
     public Vector3 targetPosition;
     public Quaternion targetRotation;
 
     // List of Augmented target images
-    private List<AugmentedImage> _tempAugmentedImages = new List<AugmentedImage>();
+    private readonly List<AugmentedImage> _tempAugmentedImages = new List<AugmentedImage>();
 
     private void Awake()
     {
-        //GameObject.Find("ARCore Device").GetComponent<ARCoreSession>().enabled = true;
+        GameObject.Find("ARCore Device").GetComponent<ARCoreSession>().enabled = true;
     }
 
-    // Update is called once per frame
     public void Update()
     {
         // Get updated augmented images for this frame.

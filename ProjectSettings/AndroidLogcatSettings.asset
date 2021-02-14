@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "R58NB1064HB",
         "name": "com.SampleCompany.ARLabirinth2019Android",
-        "processId": 24558,
+        "processId": 26742,
         "exited": true
     },
     "m_SelectedPriority": 0,
@@ -66,6 +66,120 @@
             "deviceId": "R58NB1064HB",
             "name": "com.SampleCompany.ARLabirinth2019Android",
             "processId": 24558,
+            "exited": true
+        },
+        {
+            "deviceId": "R58NB1064HB",
+            "name": "com.SampleCompany.ARLabirinth2019Android",
+            "processId": 25740,
+            "exited": true
+        },
+        {
+            "deviceId": "R58NB1064HB",
+            "name": "com.SampleCompany.ARLabirinth2019Android",
+            "processId": 26680,
+            "exited": false
+        },
+        {
+            "deviceId": "R58NB1064HB",
+            "name": "com.SampleCompany.ARLabirinth2019Android",
+            "processId": 31697,
+            "exited": true
+        },
+        {
+            "deviceId": "R58NB1064HB",
+            "name": "com.SampleCompany.ARLabirinth2019Android",
+            "processId": 531,
+            "exited": false
+        },
+        {
+            "deviceId": "R58NB1064HB",
+            "name": "com.SampleCompany.ARLabirinth2019Android",
+            "processId": 7387,
+            "exited": true
+        },
+        {
+            "deviceId": "R58NB1064HB",
+            "name": "com.SampleCompany.ARLabirinth2019Android",
+            "processId": 17275,
+            "exited": true
+        },
+        {
+            "deviceId": "R58NB1064HB",
+            "name": "com.SampleCompany.ARLabirinth2019Android",
+            "processId": 21188,
+            "exited": true
+        },
+        {
+            "deviceId": "R58NB1064HB",
+            "name": "com.SampleCompany.ARLabirinth2019Android",
+            "processId": 31199,
+            "exited": false
+        },
+        {
+            "deviceId": "R58NB1064HB",
+            "name": "com.SampleCompany.ARLabirinth2019Android",
+            "processId": 25352,
+            "exited": true
+        },
+        {
+            "deviceId": "R58NB1064HB",
+            "name": "com.SampleCompany.ARLabirinth2019Android",
+            "processId": 30843,
+            "exited": true
+        },
+        {
+            "deviceId": "R58NB1064HB",
+            "name": "com.SampleCompany.ARLabirinth2019Android",
+            "processId": 30913,
+            "exited": false
+        },
+        {
+            "deviceId": "R58NB1064HB",
+            "name": "com.SampleCompany.ARLabirinth2019Android",
+            "processId": 11237,
+            "exited": true
+        },
+        {
+            "deviceId": "R58NB1064HB",
+            "name": "com.SampleCompany.ARLabirinth2019Android",
+            "processId": 11749,
+            "exited": true
+        },
+        {
+            "deviceId": "R58NB1064HB",
+            "name": "com.SampleCompany.ARLabirinth2019Android",
+            "processId": 20186,
+            "exited": true
+        },
+        {
+            "deviceId": "R58NB1064HB",
+            "name": "com.SampleCompany.ARLabirinth2019Android",
+            "processId": 20368,
+            "exited": true
+        },
+        {
+            "deviceId": "R58NB1064HB",
+            "name": "com.SampleCompany.ARLabirinth2019Android",
+            "processId": 19397,
+            "exited": true
+        },
+        {
+            "deviceId": "R58NB1064HB",
+            "name": "com.SampleCompany.ARLabirinth2019Android",
+            "processId": 22025,
+            "exited": true
+        },
+        {
+            "deviceId": "R58NB1064HB",
+            "name": "com.SampleCompany.ARLabirinth2019Android",
+            "processId": 26742,
+            "exited": true
+        },
+        {
+            "deviceId": "MVS4C19B13005219",
+            "name": "com.SampleCompany.ARLabirinth2019Android",
+            "processId": 25162,
             "exited": true
         }
     ],

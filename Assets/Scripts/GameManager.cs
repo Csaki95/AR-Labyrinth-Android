@@ -6,27 +6,43 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
+    // Result screen text for Victory and Lose condition
     private const string VICTORYTEXT = "You won!";
     private const string LOSTTEXT = "Ran out of time...";
 
+    // References for GameManager related UI gameObjects
+    [Header("UI references")]
+    [Tooltip("Status Text element, if target is found display current number of balls in the goal, else show \"Waiting for target\"")]
     public Text statusOutput;
+    [Tooltip("Activate this gameObject when target is lost")]
     public GameObject TargetLostScreen;
+    [Tooltip("Activate this gameObject when game ended")]
     public GameObject ResultScreen;
+    [Tooltip("Activate this gameObject when game is paused, or back button was pressed")]
     public GameObject PauseScreen;
+    [Tooltip("TextMeshPro output for game end result")]
     public TMP_Text responseOutput;
 
+    // Core game components
+    [Header("Core game components")]
+    [Tooltip("Reference to the map holder gameObject that's placed on target image")]
     public GameObject mapPrefab;
+    [Tooltip("Reference to the spawners in the current map")]
     public List<Spawner> spawners = new List<Spawner>();
+    [Tooltip("ARCore requirement, controller for image tracking")]
     public AugmentedImageController augmentedImageController;
+
+    [Header("Map settings")]
+    [Tooltip("Max time on current level (seconds)")]
     public int maxTime = 40;
+    [Tooltip("Map name (case sensitive and used to get the highscore in main menu)")]
     public string highScoreName;
 
-    private Vector3 TargetPosition;
-    private Quaternion TargetRotation;
-
+    // Used for counting and displaying the current number of balls in goal
     private int finishedPlayers;
     private int playerCount;
 
+    // Status, and misc variables (usage explained in their methods)
     private bool isTracked;
     private bool isPaused;
     private bool isEnded;
@@ -49,7 +65,7 @@ public class GameManager : MonoBehaviour
         initialTrack = true;
         playerCount = spawners.Count;
         countdownTime = maxTime;
-        sceneChange = new SceneChange();
+        sceneChange = gameObject.AddComponent<SceneChange>();
         topScore = PlayerPrefs.GetInt(highScoreName, maxTime);
         StartCoroutine(CountDownTimer());
         UnPause(false);
@@ -93,8 +109,6 @@ public class GameManager : MonoBehaviour
     {
         if(augmentedImageController.imageTrackingState)
         {
-            TargetPosition = augmentedImageController.targetPosition;
-            TargetRotation = augmentedImageController.targetRotation;
             mapPrefab.transform.localPosition = augmentedImageController.targetPosition;
             mapPrefab.transform.rotation = augmentedImageController.targetRotation;
             mapPrefab.SetActive(true);

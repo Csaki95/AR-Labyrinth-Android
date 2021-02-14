@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Settings : MonoBehaviour
 {
-    
+    // Functions for setting screen orientaion
     public void ScreenAutoRotate()
     {
         Screen.orientation = ScreenOrientation.AutoRotation;
@@ -20,6 +20,7 @@ public class Settings : MonoBehaviour
         Screen.orientation = ScreenOrientation.Portrait;
     }
 
+    // Resets PlayerPrefs that contain map names, and highscores
     public void ResetScores()
     {
         PlayerPrefs.DeleteAll();

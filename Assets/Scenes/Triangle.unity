@@ -2260,6 +2260,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transition: {fileID: 1325326783}
   transitionTime: 0.5
+  isMap: 1
 --- !u!4 &1310470992 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1158779239934735713, guid: 357b09e4fbbaaa448a2bdf78a76cdbff,
@@ -2619,8 +2620,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29eaffc7a8d662545abb3978cfe1083e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imageTrackingState: 0
-  targetPosition: {x: 0, y: 0, z: 0}
   targetRotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1001 &1908878123
 PrefabInstance:
@@ -3103,7 +3102,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh93988
+  m_Name: pb_Mesh20714
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5120,7 +5119,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -5843,7 +5842,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
