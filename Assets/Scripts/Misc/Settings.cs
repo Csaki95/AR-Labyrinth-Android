@@ -6,42 +6,30 @@ public class Settings : MonoBehaviour
     [Header("Sound switches")]
     public SwitchManager soundSwitchPort;
     public SwitchManager soundSwitchLand;
-    [Header("Orientation Horizontal Selectors")]
-    public HorizontalSelector horizontalSelectorPort;
-    public HorizontalSelector horizontalSelectorLand;
+    [Header("Orientation switches")]
+    public SwitchManager rotationSwitchPort;
+    public SwitchManager rotationSwitchLand;
     private bool isMuted = false;
-    private int selectedIndex = 0;
+    private bool isRotationFrozen = false;
 
     private void Update()
     {
-        if (Screen.width < Screen.height)
-        {
-            soundSwitchPort.isOn = isMuted;
-            horizontalSelectorPort.SetIndex(selectedIndex);
-        }
-        else
-        {
-            soundSwitchLand.isOn = isMuted;
-            horizontalSelectorLand.SetIndex(selectedIndex);
-        }
+        soundSwitchPort.isOn = isMuted;
+        rotationSwitchPort.isOn = isRotationFrozen;
+        soundSwitchLand.isOn = isMuted;
+        rotationSwitchLand.isOn = isRotationFrozen;
     }
 
     // Functions for setting screen orientaion
     public void ScreenAutoRotate()
     {
-        selectedIndex = 0;
+        isRotationFrozen = false;
         Screen.orientation = ScreenOrientation.AutoRotation;
-    }
-
-    public void ScreenLandscape()
-    {
-        selectedIndex = 1;
-        Screen.orientation = ScreenOrientation.Landscape;
     }
 
     public void ScreenPortrait()
     {
-        selectedIndex = 2;
+        isRotationFrozen = true;
         Screen.orientation = ScreenOrientation.Portrait;
     }
 
