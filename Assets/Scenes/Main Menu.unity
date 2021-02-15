@@ -263,7 +263,19 @@ MonoBehaviour:
   buttonIcon: {fileID: 21300000, guid: 88dca061d041a2a4596563e6a38f66c8, type: 3}
   clickEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7339936009706668228}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   hoverEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -7730,6 +7742,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 609e08d3afb972f4fa368adb1652fdd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundSwitchPort: {fileID: 457863960}
+  soundSwitchLand: {fileID: 1176171799}
+  horizontalSelectorPort: {fileID: 198009781}
+  horizontalSelectorLand: {fileID: 1527797124}
 --- !u!114 &624291178
 MonoBehaviour:
   m_ObjectHideFlags: 0

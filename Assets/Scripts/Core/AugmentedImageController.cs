@@ -1,9 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using GoogleARCore;
-using UnityEngine.UI;
-using GoogleARCore.Examples.AugmentedImage;
 
 
 public class AugmentedImageController : MonoBehaviour
@@ -13,19 +10,15 @@ public class AugmentedImageController : MonoBehaviour
     [System.NonSerialized]
     public bool imageTrackingState;
 
-    // Reference for Target Gameobject Position
+    // Readonly Target Gameobject Position
     [Header("Position, and Rotation of target image")]
     [System.NonSerialized]
     public Vector3 targetPosition;
+    [System.NonSerialized]
     public Quaternion targetRotation;
 
     // List of Augmented target images
     private readonly List<AugmentedImage> _tempAugmentedImages = new List<AugmentedImage>();
-
-    private void Awake()
-    {
-        GameObject.Find("ARCore Device").GetComponent<ARCoreSession>().enabled = true;
-    }
 
     public void Update()
     {
@@ -33,8 +26,7 @@ public class AugmentedImageController : MonoBehaviour
         Session.GetTrackables<AugmentedImage>(
             _tempAugmentedImages, TrackableQueryFilter.Updated);
 
-        // Create visualizers and anchors for updated augmented images that are tracking and do
-        // not previously have a visualizer. Remove visualizers for stopped images.
+        // Create an anchor for updated augmented images that are tracking
         foreach (var image in _tempAugmentedImages)
         {
             // Image found
@@ -57,19 +49,16 @@ public class AugmentedImageController : MonoBehaviour
                 imageTrackingState = false;
             }
 
-            // Turn off Tracking for Images that are not in frame anymore
+            // Tracking status for current ARSession
             switch (image.TrackingMethod)
             {
                 case AugmentedImageTrackingMethod.FullTracking:
-                    //visualizer.gameObject.SetActive(true);
                     imageTrackingState = true;
                     break;
                 case AugmentedImageTrackingMethod.LastKnownPose:
-                    //visualizer.gameObject.SetActive(false);
                     imageTrackingState = false;
                     break;
                 case AugmentedImageTrackingMethod.NotTracking:
-                    //visualizer.gameObject.SetActive(false);
                     imageTrackingState = false;
                     break;
             }

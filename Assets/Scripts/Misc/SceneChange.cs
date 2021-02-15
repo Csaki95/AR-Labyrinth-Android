@@ -13,18 +13,18 @@ public class SceneChange : MonoBehaviour
 
     public void Start()
     {
+        // Setting available from editor, if true it skips the scene opening animation
         transition.SetBool("IsMap", isMap);
     }
 
     public void SceneLoader(int sceneID)
     {
+        // Reset timeScale in case scenechange got called from paused state, or slowed down state
+        Time.timeScale = 1.0f;
         StartCoroutine(LoadScene(sceneID));
     }
 
-    /**
-     * Trigger the animation
-     * Wait for transition time seconds before loading next scene
-     */
+    // Trigger the animation, wait for transition time seconds before loading next scene
     IEnumerator LoadScene(int sceneID)
     {
         transition.SetTrigger("Transition_Trigger");

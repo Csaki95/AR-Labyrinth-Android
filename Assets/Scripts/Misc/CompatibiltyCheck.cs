@@ -5,10 +5,16 @@ using TMPro;
 
 public class CompatibiltyCheck : MonoBehaviour
 {
+    [Header("UI references for output")]
+    [Tooltip("Error output text for portrait")]
     public TMP_Text outputPort;
+    [Tooltip("Error output text for landscape")]
     public TMP_Text outputLand;
+    [Tooltip("Loading text for timeout notification")]
     public TMP_Text loading;
+    [Tooltip("Error panel gameobject")]
     public GameObject errorScreen;
+    [Tooltip("Loadig panel gameobject")]
     public GameObject loadingScreen;
 
     private ApkAvailabilityStatus status;
@@ -24,6 +30,7 @@ public class CompatibiltyCheck : MonoBehaviour
 
     private void Update()
     {
+        // Waiting until we get back any type of error message
         if(!(errorMessage is null))
         {
             errorScreen.SetActive(true);
@@ -35,6 +42,7 @@ public class CompatibiltyCheck : MonoBehaviour
 
     private IEnumerator CheckAvailability()
     {
+        // Async getting current apk availability and waiting for it
         AsyncTask<ApkAvailabilityStatus> statusTask = Session.CheckApkAvailability();
         CustomYieldInstruction customYield = statusTask.WaitForCompletion();
         yield return customYield;
@@ -44,9 +52,11 @@ public class CompatibiltyCheck : MonoBehaviour
         status = statusTask.Result;
         switch (status)
         {
+            // If apk is installed and usable load main menu
             case ApkAvailabilityStatus.SupportedInstalled:
                 sceneChange.SceneLoader(1);
                 break;
+            // Handling every type of Error output, except UnknownChecking which is only a middle state before ending in one of the following
             case ApkAvailabilityStatus.SupportedApkTooOld:
                 errorMessage = "  ARCore is supported but the apk is too old. Please update Google Play Services for AR and relaunch the application.";
                 break;
@@ -67,6 +77,7 @@ public class CompatibiltyCheck : MonoBehaviour
         }
     }
 
+    // 20 second wait then change Loading text output
     private IEnumerator LoadingTimeOut()
     {
         yield return new WaitForSecondsRealtime(20);

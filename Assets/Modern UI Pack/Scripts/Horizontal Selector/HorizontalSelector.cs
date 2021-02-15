@@ -374,6 +374,35 @@ namespace Michsky.UI.ModernUIPack
                     }
                 }
             }
+            
+
+        }
+
+        public void SetIndex(int setIndex)
+        {
+            int forwardCount;
+
+            if (setIndex != index)
+            {
+                if (setIndex < index)
+                {
+                    forwardCount = itemList.Count - index - setIndex;
+                }
+                else
+                {
+                    forwardCount = index - setIndex;
+                }
+
+                Step(forwardCount);
+            }
+        }
+
+        private void Step(int forwardCount)
+        {
+            for (int i = 0; i < forwardCount; i++)
+            {
+                ForwardClick();
+            }
         }
     }
 }

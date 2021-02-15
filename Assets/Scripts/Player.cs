@@ -2,17 +2,9 @@
 
 public class Player : MonoBehaviour
 {
-    private bool atGoal;
-
-    private void Start()
-    {
-        atGoal = false;
-    }
-
-    public bool playerCollided()
-    {
-        return atGoal;
-    }
+    // Public property for getting if the Player object inside or outside the goal collider
+    public bool PlayerCollided => atGoal;
+    private bool atGoal = false;
 
     private void OnTriggerEnter(Collider other)
     {

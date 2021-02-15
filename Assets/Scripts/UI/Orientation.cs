@@ -1,10 +1,11 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
-using UnityEngine.UI;
 
+/**
+ * Create a list of gameobject pairs that are activated depending on device orientation
+ * If screen width is bigger than height the screen is in Landscape it gets activated and portrait disabled
+ * Same the other way around
+ */
 public class Orientation : MonoBehaviour
 {
     public List<CanvasPairs> orientations = new List<CanvasPairs>();

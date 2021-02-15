@@ -87,7 +87,7 @@ public class GameManager : MonoBehaviour
     {
         foreach(Spawner spawnpoint in spawners)
         {
-            spawnpoint.spawnPlayers();
+            spawnpoint.SpawnPlayers();
         }
         countdownTime = maxTime;
         initialTrack = false;
@@ -147,7 +147,7 @@ public class GameManager : MonoBehaviour
         finishedPlayers = 0;
         foreach (Spawner spawner in spawners)
         {
-            if (spawner.isPlayerCollided() == true) finishedPlayers++;
+            if (spawner.IsPlayerCollided() == true) finishedPlayers++;
         }
     }
 

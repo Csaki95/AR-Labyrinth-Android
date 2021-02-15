@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+// Container class for separate landscape and portrait UI elements
 [System.Serializable]
 public class CanvasPairs
 {
