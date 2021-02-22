@@ -1,4 +1,4 @@
-# AR-Labirinth-Android
+# AR-Labyrinth-Android
  2020/2 - 2021/1 szakdolgozat - Csáki Gergő
 
 ## Leírás
