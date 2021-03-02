@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.Android;
 using GoogleARCore;
 using TMPro;
 
@@ -30,7 +31,7 @@ public class CompatibiltyCheck : MonoBehaviour
 
     private void Update()
     {
-        // Waiting until we get back any type of error message
+        // Waiting until we get back any type of error message, if there's none we load main menu
         if(!(errorMessage is null))
         {
             errorScreen.SetActive(true);

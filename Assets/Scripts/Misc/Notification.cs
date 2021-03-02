@@ -8,6 +8,9 @@ public class Notification : MonoBehaviour
         if (PlayerPrefs.GetInt("doNotify", 1) == 0)
         {
             this.gameObject.SetActive(false);
+        } else
+        {
+            this.gameObject.SetActive(true);
         }
     }
 

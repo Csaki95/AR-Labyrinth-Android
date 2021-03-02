@@ -2,263 +2,167 @@
     "m_SelectedDeviceId": "R58NB1064HB",
     "m_SelectedPackage": {
         "deviceId": "R58NB1064HB",
-        "name": "com.SampleCompany.ARLabirinth2019Android",
-        "processId": 2800,
-        "exited": false
+        "name": "com.AteYourGame.ARLabyrinth",
+        "processId": 21638,
+        "exited": true
     },
     "m_SelectedPriority": 0,
     "m_KnownPackagesForSerialization": [
         {
             "deviceId": "R58NB1064HB",
             "name": "com.SampleCompany.ARLabirinth2019Android",
-            "processId": 18877,
-            "exited": true
-        },
-        {
-            "deviceId": "R58NB1064HB",
-            "name": "com.SampleCompany.ARLabirinth2019Android",
-            "processId": 21785,
-            "exited": true
-        },
-        {
-            "deviceId": "R58NB1064HB",
-            "name": "com.SampleCompany.ARLabirinth2019Android",
-            "processId": 23943,
-            "exited": true
-        },
-        {
-            "deviceId": "R58NB1064HB",
-            "name": "com.SampleCompany.ARLabirinth2019Android",
-            "processId": 24935,
-            "exited": true
-        },
-        {
-            "deviceId": "R58NB1064HB",
-            "name": "com.SampleCompany.ARLabirinth2019Android",
-            "processId": 11354,
-            "exited": true
-        },
-        {
-            "deviceId": "R58NB1064HB",
-            "name": "com.SampleCompany.ARLabirinth2019Android",
-            "processId": 26177,
-            "exited": false
-        },
-        {
-            "deviceId": "R58NB1064HB",
-            "name": "com.SampleCompany.ARLabirinth2019Android",
-            "processId": 15959,
-            "exited": false
-        },
-        {
-            "deviceId": "R58NB1064HB",
-            "name": "com.SampleCompany.ARLabirinth2019Android",
-            "processId": 19564,
-            "exited": true
-        },
-        {
-            "deviceId": "R58NB1064HB",
-            "name": "com.SampleCompany.ARLabirinth2019Android",
-            "processId": 20857,
-            "exited": false
-        },
-        {
-            "deviceId": "R58NB1064HB",
-            "name": "com.SampleCompany.ARLabirinth2019Android",
-            "processId": 24558,
-            "exited": true
-        },
-        {
-            "deviceId": "R58NB1064HB",
-            "name": "com.SampleCompany.ARLabirinth2019Android",
-            "processId": 25740,
-            "exited": true
-        },
-        {
-            "deviceId": "R58NB1064HB",
-            "name": "com.SampleCompany.ARLabirinth2019Android",
-            "processId": 26680,
-            "exited": false
-        },
-        {
-            "deviceId": "R58NB1064HB",
-            "name": "com.SampleCompany.ARLabirinth2019Android",
-            "processId": 31697,
-            "exited": true
-        },
-        {
-            "deviceId": "R58NB1064HB",
-            "name": "com.SampleCompany.ARLabirinth2019Android",
-            "processId": 531,
-            "exited": false
-        },
-        {
-            "deviceId": "R58NB1064HB",
-            "name": "com.SampleCompany.ARLabirinth2019Android",
-            "processId": 7387,
-            "exited": true
-        },
-        {
-            "deviceId": "R58NB1064HB",
-            "name": "com.SampleCompany.ARLabirinth2019Android",
-            "processId": 17275,
-            "exited": true
-        },
-        {
-            "deviceId": "R58NB1064HB",
-            "name": "com.SampleCompany.ARLabirinth2019Android",
-            "processId": 21188,
-            "exited": true
-        },
-        {
-            "deviceId": "R58NB1064HB",
-            "name": "com.SampleCompany.ARLabirinth2019Android",
-            "processId": 31199,
-            "exited": false
-        },
-        {
-            "deviceId": "R58NB1064HB",
-            "name": "com.SampleCompany.ARLabirinth2019Android",
-            "processId": 25352,
-            "exited": true
-        },
-        {
-            "deviceId": "R58NB1064HB",
-            "name": "com.SampleCompany.ARLabirinth2019Android",
-            "processId": 30843,
-            "exited": true
-        },
-        {
-            "deviceId": "R58NB1064HB",
-            "name": "com.SampleCompany.ARLabirinth2019Android",
-            "processId": 30913,
-            "exited": false
-        },
-        {
-            "deviceId": "R58NB1064HB",
-            "name": "com.SampleCompany.ARLabirinth2019Android",
-            "processId": 11237,
-            "exited": true
-        },
-        {
-            "deviceId": "R58NB1064HB",
-            "name": "com.SampleCompany.ARLabirinth2019Android",
-            "processId": 11749,
-            "exited": true
-        },
-        {
-            "deviceId": "R58NB1064HB",
-            "name": "com.SampleCompany.ARLabirinth2019Android",
-            "processId": 20186,
-            "exited": true
-        },
-        {
-            "deviceId": "R58NB1064HB",
-            "name": "com.SampleCompany.ARLabirinth2019Android",
-            "processId": 20368,
-            "exited": true
-        },
-        {
-            "deviceId": "R58NB1064HB",
-            "name": "com.SampleCompany.ARLabirinth2019Android",
-            "processId": 19397,
-            "exited": true
-        },
-        {
-            "deviceId": "R58NB1064HB",
-            "name": "com.SampleCompany.ARLabirinth2019Android",
-            "processId": 22025,
-            "exited": true
-        },
-        {
-            "deviceId": "R58NB1064HB",
-            "name": "com.SampleCompany.ARLabirinth2019Android",
-            "processId": 26742,
-            "exited": true
-        },
-        {
-            "deviceId": "R58NB1064HB",
-            "name": "com.SampleCompany.ARLabirinth2019Android",
-            "processId": 28249,
-            "exited": true
-        },
-        {
-            "deviceId": "R58NB1064HB",
-            "name": "com.SampleCompany.ARLabirinth2019Android",
-            "processId": 28853,
-            "exited": true
-        },
-        {
-            "deviceId": "R58NB1064HB",
-            "name": "com.SampleCompany.ARLabirinth2019Android",
-            "processId": 8361,
-            "exited": false
-        },
-        {
-            "deviceId": "R58NB1064HB",
-            "name": "com.SampleCompany.ARLabirinth2019Android",
-            "processId": 28408,
-            "exited": false
-        },
-        {
-            "deviceId": "R58NB1064HB",
-            "name": "com.SampleCompany.ARLabirinth2019Android",
-            "processId": 23662,
-            "exited": true
-        },
-        {
-            "deviceId": "R58NB1064HB",
-            "name": "com.SampleCompany.ARLabirinth2019Android",
-            "processId": 30006,
-            "exited": false
-        },
-        {
-            "deviceId": "R58NB1064HB",
-            "name": "com.SampleCompany.ARLabirinth2019Android",
-            "processId": 32242,
-            "exited": false
-        },
-        {
-            "deviceId": "R58NB1064HB",
-            "name": "com.SampleCompany.ARLabirinth2019Android",
-            "processId": 1449,
-            "exited": false
-        },
-        {
-            "deviceId": "R58NB1064HB",
-            "name": "com.SampleCompany.ARLabirinth2019Android",
-            "processId": 7362,
-            "exited": false
-        },
-        {
-            "deviceId": "R58NB1064HB",
-            "name": "com.SampleCompany.ARLabirinth2019Android",
-            "processId": 7525,
-            "exited": false
-        },
-        {
-            "deviceId": "R58NB1064HB",
-            "name": "com.SampleCompany.ARLabirinth2019Android",
-            "processId": 9705,
-            "exited": false
-        },
-        {
-            "deviceId": "R58NB1064HB",
-            "name": "com.SampleCompany.ARLabirinth2019Android",
             "processId": 18675,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "R58NB1064HB",
             "name": "com.SampleCompany.ARLabirinth2019Android",
             "processId": 19037,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "R58NB1064HB",
             "name": "com.SampleCompany.ARLabirinth2019Android",
             "processId": 2800,
+            "exited": true
+        },
+        {
+            "deviceId": "R58NB1064HB",
+            "name": "com.SampleCompany.ARLabirinth2019Android",
+            "processId": 4909,
+            "exited": true
+        },
+        {
+            "deviceId": "R58NB1064HB",
+            "name": "com.SampleCompany.ARLabirinth2019Android",
+            "processId": 7917,
+            "exited": true
+        },
+        {
+            "deviceId": "R58NB1064HB",
+            "name": "com.sec.android.app.launcher",
+            "processId": 2601,
             "exited": false
+        },
+        {
+            "deviceId": "R58NB1064HB",
+            "name": "com.AteYourGame.ARLabyrinth",
+            "processId": 26440,
+            "exited": false
+        },
+        {
+            "deviceId": "R58NB1064HB",
+            "name": "com.AteYourGame.ARLabyrinth",
+            "processId": 26588,
+            "exited": false
+        },
+        {
+            "deviceId": "R58NB1064HB",
+            "name": "com.AteYourGame.ARLabyrinth",
+            "processId": 32467,
+            "exited": true
+        },
+        {
+            "deviceId": "R58NB1064HB",
+            "name": "com.AteYourGame.ARLabyrinth",
+            "processId": 8412,
+            "exited": false
+        },
+        {
+            "deviceId": "R58NB1064HB",
+            "name": "com.AteYourGame.ARLabyrinth",
+            "processId": 16784,
+            "exited": true
+        },
+        {
+            "deviceId": "R58NB1064HB",
+            "name": "com.AteYourGame.ARLabyrinth",
+            "processId": 18878,
+            "exited": false
+        },
+        {
+            "deviceId": "R58NB1064HB",
+            "name": "com.AteYourGame.ARLabyrinth",
+            "processId": 19493,
+            "exited": true
+        },
+        {
+            "deviceId": "R58NB1064HB",
+            "name": "com.AteYourGame.ARLabyrinth",
+            "processId": 32501,
+            "exited": true
+        },
+        {
+            "deviceId": "R58NB1064HB",
+            "name": "com.AteYourGame.ARLabyrinth",
+            "processId": 12164,
+            "exited": true
+        },
+        {
+            "deviceId": "R58NB1064HB",
+            "name": "com.AteYourGame.ARLabyrinth",
+            "processId": 19983,
+            "exited": true
+        },
+        {
+            "deviceId": "R58NB1064HB",
+            "name": "com.AteYourGame.ARLabyrinth",
+            "processId": 20248,
+            "exited": true
+        },
+        {
+            "deviceId": "R58NB1064HB",
+            "name": "com.AteYourGame.ARLabyrinth",
+            "processId": 23924,
+            "exited": false
+        },
+        {
+            "deviceId": "R58NB1064HB",
+            "name": "com.AteYourGame.ARLabyrinth",
+            "processId": 23028,
+            "exited": true
+        },
+        {
+            "deviceId": "R58NB1064HB",
+            "name": "com.AteYourGame.ARLabyrinth",
+            "processId": 14492,
+            "exited": false
+        },
+        {
+            "deviceId": "R58NB1064HB",
+            "name": "com.AteYourGame.ARLabyrinth",
+            "processId": 16741,
+            "exited": false
+        },
+        {
+            "deviceId": "R58NB1064HB",
+            "name": "com.AteYourGame.ARLabyrinth",
+            "processId": 7093,
+            "exited": true
+        },
+        {
+            "deviceId": "R58NB1064HB",
+            "name": "com.AteYourGame.ARLabyrinth",
+            "processId": 10330,
+            "exited": true
+        },
+        {
+            "deviceId": "R58NB1064HB",
+            "name": "com.AteYourGame.ARLabyrinth",
+            "processId": 14025,
+            "exited": true
+        },
+        {
+            "deviceId": "R58NB1064HB",
+            "name": "com.AteYourGame.ARLabyrinth",
+            "processId": 17166,
+            "exited": true
+        },
+        {
+            "deviceId": "R58NB1064HB",
+            "name": "com.AteYourGame.ARLabyrinth",
+            "processId": 21638,
+            "exited": true
         },
         {
             "deviceId": "MVS4C19B13005219",
