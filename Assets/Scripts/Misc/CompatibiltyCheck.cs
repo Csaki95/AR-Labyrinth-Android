@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using UnityEngine;
-using UnityEngine.Android;
 using GoogleARCore;
 using TMPro;
 

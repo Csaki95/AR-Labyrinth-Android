@@ -2606,7 +2606,7 @@ GameObject:
   - component: {fileID: 1834146952}
   - component: {fileID: 1834146954}
   m_Layer: 0
-  m_Name: AugMentedImageController
+  m_Name: AugmentedImageController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2638,7 +2638,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29eaffc7a8d662545abb3978cfe1083e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetRotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1001 &1908878123
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3120,7 +3119,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh20714
+  m_Name: pb_Mesh25544
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4046,6 +4045,16 @@ PrefabInstance:
       propertyPath: PauseScreen
       value: 
       objectReference: {fileID: 5790859160857457127}
+    - target: {fileID: 8208729279073761522, guid: 357b09e4fbbaaa448a2bdf78a76cdbff,
+        type: 3}
+      propertyPath: PauseMenu
+      value: 
+      objectReference: {fileID: 5790859160857457127}
+    - target: {fileID: 8208729279073761522, guid: 357b09e4fbbaaa448a2bdf78a76cdbff,
+        type: 3}
+      propertyPath: highScoreKey
+      value: Triangle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 357b09e4fbbaaa448a2bdf78a76cdbff, type: 3}
 --- !u!1 &5790859159908528744

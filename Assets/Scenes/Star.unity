@@ -2436,7 +2436,7 @@ GameObject:
   - component: {fileID: 1834146952}
   - component: {fileID: 1834146954}
   m_Layer: 0
-  m_Name: AugMentedImageController
+  m_Name: AugmentedImageController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2468,7 +2468,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29eaffc7a8d662545abb3978cfe1083e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetRotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1001 &1844796912
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3059,6 +3058,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ARCore Device
       objectReference: {fileID: 0}
+    - target: {fileID: 1772147192650458, guid: c10877f7cd5764de18d46d7b777d1faa, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4442908887562770, guid: c10877f7cd5764de18d46d7b777d1faa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -3131,7 +3134,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh20092
+  m_Name: pb_Mesh24934
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4055,6 +4058,16 @@ PrefabInstance:
     - target: {fileID: 8208729279073761522, guid: 357b09e4fbbaaa448a2bdf78a76cdbff,
         type: 3}
       propertyPath: PauseScreen
+      value: 
+      objectReference: {fileID: 5790859160857457127}
+    - target: {fileID: 8208729279073761522, guid: 357b09e4fbbaaa448a2bdf78a76cdbff,
+        type: 3}
+      propertyPath: highScoreKey
+      value: Star
+      objectReference: {fileID: 0}
+    - target: {fileID: 8208729279073761522, guid: 357b09e4fbbaaa448a2bdf78a76cdbff,
+        type: 3}
+      propertyPath: PauseMenu
       value: 
       objectReference: {fileID: 5790859160857457127}
     m_RemovedComponents: []

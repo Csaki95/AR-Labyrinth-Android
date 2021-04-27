@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
     [Tooltip("Activate this gameObject when game ended")]
     public GameObject ResultScreen;
     [Tooltip("Activate this gameObject when game is paused, or back button was pressed")]
-    public GameObject PauseScreen;
+    public GameObject PauseMenu;
     [Tooltip("TextMeshPro output for game end result")]
     public TMP_Text responseOutput;
 
@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
     [Tooltip("Max time on current level (seconds)")]
     public int maxTime = 40;
     [Tooltip("Map name (case sensitive and used to get the highscore in main menu)")]
-    public string highScoreName;
+    public string highScoreKey;
 
     // Used for counting and displaying the current number of balls in goal
     private int finishedPlayers;
@@ -50,6 +50,7 @@ public class GameManager : MonoBehaviour
     private int countdownTime;
     private int topScore;
     private SceneChange sceneChange;
+    private bool singelSlowDown;
 
     private void Awake()
     {
@@ -66,20 +67,21 @@ public class GameManager : MonoBehaviour
         playerCount = spawners.Count;
         countdownTime = maxTime;
         sceneChange = gameObject.AddComponent<SceneChange>();
-        topScore = PlayerPrefs.GetInt(highScoreName, maxTime);
+        singelSlowDown = false;
+        topScore = PlayerPrefs.GetInt(highScoreKey, maxTime);
         StartCoroutine(CountDownTimer());
         UnPause(false);
     }
 
     private void Update()
     {
+        if (isTracked && !isPaused && initialTrack) SpawnPlayer();
+        if (finishedPlayers == playerCount) EndGame(true);
+        if (countdownTime == 0 && finishedPlayers != playerCount) EndGame(false);
         MapTracking();
         FinishedPlayerCount();
         StatusOutput();
         BackButton();
-        if (isTracked && !isPaused && initialTrack) SpawnPlayer();
-        if (finishedPlayers == playerCount) EndGame(true);
-        if (countdownTime == 0 && finishedPlayers != playerCount) EndGame(false);
     }
 
     // used for spawning, or reseting ball position to original spawnpoint
@@ -101,8 +103,8 @@ public class GameManager : MonoBehaviour
 
     public void UnPause(bool forSceneChange)
     {
-        if(!forSceneChange) isPaused = false;
         Time.timeScale = 1.0f;
+        if (!forSceneChange) isPaused = false;
     }
 
     private void MapTracking()
@@ -153,14 +155,14 @@ public class GameManager : MonoBehaviour
 
     private void EndGame(bool isVictory)
     {
-        int elapsedTime = maxTime - countdownTime;
         TargetLostScreen.SetActive(false);
         ResultScreen.gameObject.SetActive(true);
         if (isVictory)
         {
+            int elapsedTime = maxTime - countdownTime;
             if (topScore > elapsedTime)
             {
-                PlayerPrefs.SetInt(highScoreName, elapsedTime);
+                PlayerPrefs.SetInt(highScoreKey, elapsedTime);
                 responseOutput.text = VICTORYTEXT + "\n in: " + elapsedTime.ToString() + " seconds" + "\n New Record!";
             }
             else
@@ -172,22 +174,31 @@ public class GameManager : MonoBehaviour
         {
             responseOutput.text = LOSTTEXT;
         }
-        Time.timeScale = 0.25f;
+        SlowDown();
     }
 
     private void BackButton()
     {
         if (Application.platform == RuntimePlatform.Android)
         {
-            if (Input.GetKeyDown(KeyCode.Escape) && PauseScreen.activeSelf)
+            if (Input.GetKeyDown(KeyCode.Escape) && PauseMenu.activeSelf)
             {
                 sceneChange.SceneLoader(0);
             } 
             else if (Input.GetKeyDown(KeyCode.Escape))
             {
                 Pause();
-                PauseScreen.SetActive(true);
+                PauseMenu.SetActive(true);
             }
+        }
+    }
+
+    public void SlowDown()
+    {
+        if (!singelSlowDown)
+        {
+            Time.timeScale = 0.25f;
+            singelSlowDown = true;
         }
     }
 
