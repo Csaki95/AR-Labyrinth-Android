@@ -1,19 +1,11 @@
-# AR-Labyrinth-Android
- 2020/2 - 2021/1 szakdolgozat - Csáki Gergő
+# Golyóterelő ügyességi labirintus játék kiterjesztett valóságban
+szakdolgozat - SZTE TTIK Csáki Gergő
 
-## Leírás
-AR Labirintus játék Android platformra Unity segítségével. A program céla a régi kisméretű kézi labirintus játékok rekreálása AR környezetben. A mobiltelefon kamerájával rámutatunk egy Target képre amelyre rávetítjük a labirintust, majd a kép, névjegykártya mozgatásával, és döntésével a valós játékot imitálva kell eljuttatni a golyókat a kijelölt helyükre megadott időkorláton belül.
+## Feladat megfogalmazása
+A feladat egy kézi labirintus játék fejlesztése kiterjesztett valóságban Android készülékekre. A pálya, és golyó testek lemodellezése, illetve az eszköz hátlapi kamerájával kép beazonosítása, majd labirintus rávetítése, és fizikai szimulációja a mozgásának megfelelően.
 
-Valós referencia:
-
-<p float="left">
- <img src="Assets/Target/Reference/814dTEjJT2L._SX425_.jpg" width="250">
-</p>
-
-## Alkalmazás elemei
-* Labirintus játék több golyóval, és megadott teljesítési határidővel
-* Pálya választó feltüntetett legjobb időkkel
-* Beállítások, és Leírás menüpont
+## Megoldási mód
+Prototípus létrehozását követően a kívánt kiterjesztett valóság funkcionalitást kínáló csomagok tesztelése, majd a felhasználásnak megfelelővel játék fejlesztése az elsajátított szoftverfejlesztési, és számítógépes grafikai ismeretek segítségével. Emellett a négy pályához felhasznált labirintusok, és az azokban terelt golyók modellezése.
 
 ## Telepítés
  A játék használatához szükséges egy [ARCore](https://developers.google.com/ar/discover/supported-devices) kompatibilis eszköz, illetve engedélyezni kell az ismeretlen forrásból származó alkalmazások telepítését.
