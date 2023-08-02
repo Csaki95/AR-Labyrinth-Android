@@ -12,7 +12,6 @@ Prototípus létrehozását követően a kívánt kiterjesztett valóság funkci
  
  Az alkalmazás elérhető: 
  * [.apk Letöltés/Download](https://github.com/Csaki95/AR-Labirinth-2019-Android/raw/master/Builds/AR%20Labyrinth.apk)
- * [Play Store link](https://play.google.com/store/apps/details?id=com.AteYourGame.ARLabyrinth)
  
  ## Fejlesztés
  A játék Unity 2020.1.10f verzióban készül ARCore 1.20.0-ra építve.
